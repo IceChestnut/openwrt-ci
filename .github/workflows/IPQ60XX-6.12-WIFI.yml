@@ -2,6 +2,12 @@ name: IPQ60XX-6.12-WIFI
 
 on:
   workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
   schedule:
     - cron: 0 19 * * *
 
@@ -22,6 +28,9 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
     - name: Check Server Performance(检查服务器性能)
       run: |
         echo "警告⚠"
