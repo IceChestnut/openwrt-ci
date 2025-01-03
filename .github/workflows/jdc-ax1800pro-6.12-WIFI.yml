@@ -20,7 +20,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-6.12-WIFI
+  FIRMWARE_TAG: jdc-ax1800pro-6.12-WIFI
   TZ: Asia/Shanghai
 
 jobs:
