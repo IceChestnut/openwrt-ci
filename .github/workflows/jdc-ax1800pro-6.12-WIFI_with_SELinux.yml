@@ -1,4 +1,4 @@
-name: jdc-ax1800pro-6.12-WIFI
+name: jdc-ax1800pro-6.12-WIFI_with_SELinux
 
 on:
   workflow_dispatch:
