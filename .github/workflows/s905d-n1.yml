@@ -1,4 +1,4 @@
-name: s905d-n1
+nname: s905d-n1
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
-  CONFIG_FILE: configs/N1.config
+  CONFIG_FILE: configs/n1.config
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
