@@ -1,4 +1,4 @@
-nname: s905d-n1
+name: s905d-n1
 
 on:
   workflow_dispatch:
