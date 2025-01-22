@@ -100,6 +100,7 @@ jobs:
     - name: Install Feeds(安装feeds)
       run: |
         cd $OPENWRT_PATH
+        echo "src-git sqm_scripts_nss https://github.com/rickkdotnet/sqm-scripts-nss.git" >> feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
   
